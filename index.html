@@ -110,7 +110,7 @@
     },
     methods: {
       fetchProdutos() {
-        fetch("./api/produtos.json")
+        fetch("https://gist.githubusercontent.com/NervyShield/56d0c7e2912619f822953a6c44008493/raw/4dfad217064c5f70a0048d06568b355bf899ce6a/produtos.json")
           .then(r => r.json())
           .then(r => {
             this.produtos = r;
